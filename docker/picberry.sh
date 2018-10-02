@@ -4,7 +4,6 @@ set -o errexit
 set -o verbose
 
 cd /var/tmp/
-git clone https://github.com/rob-orb/picberry
+git clone https://github.com/Rob-Orb/picberry.git
 cd picberry
-make raspberrypi
-
+debuild -uc -us
