@@ -1,5 +1,7 @@
 all:
 	docker image build --tag roborb/soft .
+force:
+	docker image build --no-cache --tag roborb/soft .
 start:
 	mkdir -p ${PWD}/docker-output
 	docker stop roborb-soft || true

@@ -8,6 +8,10 @@ RUN apt-get upgrade
 RUN apt-get install -y git \
                        make \
                        gcc \
-                       g++
+                       g++ \
+                       build-essential \
+                       devscripts \
+                       fakeroot \
+                       debhelper
 RUN [ "cross-build-end" ]
 
