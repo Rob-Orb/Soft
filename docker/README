@@ -1,5 +1,0 @@
-# You first need to install Docker and qemu-arm-static
-
-make # to build the docker
-make start # to start the docker
-./rob_orb_compute.sh wiringPi.sh # as an example
