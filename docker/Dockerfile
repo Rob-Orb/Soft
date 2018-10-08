@@ -36,7 +36,6 @@ RUN apt-get install -y git \
 	    lsb-release \
 	    python-pip \
 	    python-gtk2 \
-	    fakeroot \
 	    apt-transport-https
 RUN pip install rosdep \
 		rosinstall_generator \
