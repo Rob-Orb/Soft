@@ -7,7 +7,6 @@ RUN echo "deb http://rob-orb.github.io/debian stretch main" > /etc/apt/sources.l
 RUN apt update
 RUN apt install ros-kinetic-bare
 RUN /opt/ros/kinetic/initialize.sh
-RUN source /opt/ros/kinetic/setup.bash
 RUN echo "yaml https://rob-orb.github.io/rosdistro/rosdep/ros-rosdistro-kinetic.yaml kinetic" > /etc/ros/rosdep/sources.list.d/90-ros-rosdistro-kinectic.list
 RUN export ROSDISTRO_INDEX_URL=https://rob-orb.github.io/rosdistro/index.yaml
 RUN rosdep update
