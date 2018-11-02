@@ -35,10 +35,12 @@ RUN apt-get install -y git \
 	    python-nose \
 	    lsb-release \
 	    python-pip \
-	    python-gtk2
+	    python-gtk2 \
+	    apt-transport-https
 RUN pip install rosdep \
 		rosinstall_generator \
 		wstool \
-		rosinstall
+		rosinstall \
+		bloom
 RUN [ "cross-build-end" ]
 
